@@ -3,7 +3,7 @@ from datetime import datetime, date
 
 app = Flask(__name__)
 
-@app.route('/files', methods=['GET', 'POST'])
+@app.route('/files', methods=['POST'])
 def files():
     if request.method == 'POST':
         try:
